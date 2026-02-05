@@ -48,7 +48,7 @@ def check_csv_files_only(path):
         file_path = os.path.join(path, filename)
         if os.path.isdir(file_path):
             continue  # Skip directories
-        if not (filename.endswith('.csv') or filename == 'attributes.json'):
+        if not (filename.endswith('.csv') or filename.endswith('.json') or filename.startswith('.')):
             raise ValueError(
                 f"Error: Invalid file {filename} in {path}. Only .csv and attributes.json files are allowed.")
 
@@ -98,23 +98,21 @@ def validate_dataset(path=DATASET_DIR,dataset_name=None):
     # validate config.json
     validate_config(path)
     # validate data folder
-    if dataset_name is None:
-        # assert that only two elements are in the path: config.json and the dataset
-        assert (len(os.listdir(path)) == 2), "Error: Only config.json and one dataset folder are allowed."
-        dataset_name = [f for f in os.listdir(path) if f != "config.json"][0]
-    dataset_path = os.path.join(path, dataset_name)
-    # Validate system file
-    validate_system_json(dataset_path)
-    # validate scenarios file
-    validate_scenarios(dataset_path)
-    # Validate energy system files
-    energy_system_path = os.path.join(dataset_path, 'energy_system')
-    assert os.path.isdir(energy_system_path), "Error: No energy system found."
-    for required_file in REQUIRED_FILES_FOLDERS['energy_system']:
-        if not check_file_exists(energy_system_path, required_file):
-            raise ValueError(f"Error: Missing required file {required_file} in {energy_system_path}")
-    check_folder_structure(dataset_path, {'set_technologies': REQUIRED_FILES_FOLDERS['set_technologies'],
-                                  'set_carriers': REQUIRED_FILES_FOLDERS['set_carriers']})
+    dataset_name = [f for f in os.listdir(path) if f != "config.json" and f != '.DS_Store']
+    for name in dataset_name:
+        dataset_path = os.path.join(path, name)
+        # Validate system file
+        validate_system_json(dataset_path)
+        # validate scenarios file
+        validate_scenarios(dataset_path)
+        # Validate energy system files
+        energy_system_path = os.path.join(dataset_path, 'energy_system')
+        assert os.path.isdir(energy_system_path), "Error: No energy system found."
+        for required_file in REQUIRED_FILES_FOLDERS['energy_system']:
+            if not check_file_exists(energy_system_path, required_file):
+                raise ValueError(f"Error: Missing required file {required_file} in {energy_system_path}")
+        check_folder_structure(dataset_path, {'set_technologies': REQUIRED_FILES_FOLDERS['set_technologies'],
+                                      'set_carriers': REQUIRED_FILES_FOLDERS['set_carriers']})
     return True
 
 if __name__ == "__main__":
