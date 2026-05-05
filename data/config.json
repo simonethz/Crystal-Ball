@@ -14,9 +14,11 @@
       "ScaleFlag": 2,
       "BarOrder": 0
     },
+    "save_duals": true,
     "use_scaling": false,
     "run_diagnostics": true,
     "scaling_include_rhs": true
-  }
+  },
+  "plugins": {"investment_decisions": {}}
 
 }

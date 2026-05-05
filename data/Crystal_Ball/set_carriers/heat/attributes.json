@@ -9,7 +9,8 @@
   },
   "demand": {
     "default_value": 0,
-    "unit": "GW"
+    "unit": "GW",
+    "scaling_factor": 0.5
   },
   "price_shed_demand": {
     "default_value": "inf",
