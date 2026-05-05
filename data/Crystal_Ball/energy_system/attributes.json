@@ -24,7 +24,7 @@
     "unit": "gigatons"
   },
   "discount_rate": {
-    "default_value": 0.25,
+    "default_value": 0.05,
     "unit": "1"
   },
   "knowledge_spillover_rate": {
