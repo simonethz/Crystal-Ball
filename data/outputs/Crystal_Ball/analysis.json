@@ -48,5 +48,5 @@
   "overwrite_output": true,
   "output_format": "h5",
   "earliest_year_of_data": 1900,
-  "zen_garden_version": "2.9.7"
+  "zen_garden_version": "2.11.0"
 }
