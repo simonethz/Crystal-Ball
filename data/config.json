@@ -9,10 +9,14 @@
       "Method": 2,
       "NodeMethod": 2,
       "Crossover": 0,
-      "Threads": 64,
+      "Threads": 32,
       "DualReductions": 0
     },
-  "save_duals": true
-  }
+  "save_duals": true,
+  "use_scaling": false,
+  "run_diagnostics": true,
+  "scaling_include_rhs": true
+  },
+  "plugins":{"investment_decisions":{}}
 
 }

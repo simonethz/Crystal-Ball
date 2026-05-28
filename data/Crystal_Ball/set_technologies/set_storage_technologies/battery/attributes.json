@@ -15,6 +15,10 @@
     "default_value": 0,
     "unit": "GW"
   },
+  "flow_storage_inflow": {
+    "default_value": 0,
+    "unit": "GW"
+  },
   "capacity_limit": {
     "default_value": "inf",
     "unit": "GW"
@@ -28,7 +32,7 @@
     "unit": "1"
   },
   "lifetime": {
-    "default_value": 100,
+    "default_value": 13,
     "unit": "1"
   },
   "opex_specific_variable": {
@@ -48,7 +52,7 @@
     "unit": "GW"
   },
   "opex_specific_fixed": {
-    "default_value": 56.32675703168136,
+    "default_value": 2.4711107559102152,
     "unit": "Euro/kW"
   },
   "max_diffusion_rate": {
@@ -56,23 +60,23 @@
     "unit": "1"
   },
   "efficiency_charge": {
-    "default_value": 0.6324555320336759,
+    "default_value": 0.9273618495495703,
     "unit": "1"
   },
   "efficiency_discharge": {
-    "default_value": 0.6324555320336759,
+    "default_value": 0.9273618495495703,
     "unit": "1"
   },
   "self_discharge": {
-    "default_value": 0,
+    "default_value": 0.001,
     "unit": "1"
   },
   "capex_specific_storage": {
-    "default_value": 2957.1215747879314,
+    "default_value": 280.3475603731071,
     "unit": "Euro/kW"
   },
   "capex_specific_storage_energy": {
-    "default_value": 12.764873949518956,
+    "default_value": 289.86142055159627,
     "unit": "Euro/kWh"
   },
   "capacity_addition_min_energy": {

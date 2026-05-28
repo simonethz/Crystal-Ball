@@ -57,12 +57,11 @@
     "SK",
     "UK"
   ],
-  "reference_year": 2050,
+  "reference_year": 2022,
   "optimized_years": 1,
   "interval_between_years": 1,
   "use_rolling_horizon": false,
-  "aggregated_time_steps_per_year": 8760,
-  "conduct_time_series_aggregation": false,
-  "knowledge_depreciation_rate": 0.1,
+  "aggregated_time_steps_per_year": 96,
+  "conduct_time_series_aggregation": true,
   "conduct_scenario_analysis": true
 }

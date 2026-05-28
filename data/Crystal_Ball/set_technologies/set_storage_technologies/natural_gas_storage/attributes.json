@@ -4,7 +4,7 @@
     "unit": "GW"
   },
   "capacity_addition_max": {
-    "default_value": "inf",
+    "default_value": 0,
     "unit": "GW"
   },
   "capacity_addition_unbounded": {
@@ -15,8 +15,12 @@
     "default_value": 0,
     "unit": "GW"
   },
+  "flow_storage_inflow": {
+    "default_value": 0,
+    "unit": "GW"
+  },
   "capacity_limit": {
-    "default_value": "inf",
+    "default_value": 0,
     "unit": "GW"
   },
   "min_load": {
@@ -28,7 +32,7 @@
     "unit": "1"
   },
   "lifetime": {
-    "default_value": 13,
+    "default_value": 100,
     "unit": "1"
   },
   "opex_specific_variable": {
@@ -48,31 +52,31 @@
     "unit": "GW"
   },
   "opex_specific_fixed": {
-    "default_value": 2.4711107559102152,
-    "unit": "Euro/kW"
+    "default_value": 0,
+    "unit": "Euro/MW"
   },
   "max_diffusion_rate": {
     "default_value": "inf",
     "unit": "1"
   },
   "efficiency_charge": {
-    "default_value": 0.9273618495495703,
+    "default_value": 0.9974968671630001,
     "unit": "1"
   },
   "efficiency_discharge": {
-    "default_value": 0.9273618495495703,
+    "default_value": 0.9974968671630001,
     "unit": "1"
   },
   "self_discharge": {
-    "default_value": 0.001,
+    "default_value": 0,
     "unit": "1"
   },
   "capex_specific_storage": {
-    "default_value": 280.3475603731071,
+    "default_value": 0.0,
     "unit": "Euro/kW"
   },
   "capex_specific_storage_energy": {
-    "default_value": 289.86142055159627,
+    "default_value": 0.0,
     "unit": "Euro/kWh"
   },
   "capacity_addition_min_energy": {
@@ -80,7 +84,7 @@
     "unit": "GWh"
   },
   "capacity_addition_max_energy": {
-    "default_value": "inf",
+    "default_value": 0,
     "unit": "GWh"
   },
   "capacity_existing_energy": {
@@ -88,7 +92,7 @@
     "unit": "GWh"
   },
   "capacity_limit_energy": {
-    "default_value": "inf",
+    "default_value": 0,
     "unit": "GWh"
   },
   "min_load_energy": {
@@ -121,7 +125,7 @@
   },
   "reference_carrier": {
     "default_value": [
-      "electricity"
+      "natural_gas"
     ]
   }
 }

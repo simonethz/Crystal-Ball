@@ -31,6 +31,10 @@
     "default_value": "inf",
     "unit": "1"
   },
+  "knowledge_depreciation_rate": {
+    "default_value": 0.1,
+    "unit": "1"
+  },
   "market_share_unbounded": {
     "default_value": 0.02,
     "unit": "1"

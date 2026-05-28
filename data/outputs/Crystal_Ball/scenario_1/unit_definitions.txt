@@ -1,0 +1,5 @@
+year = 365 * day = a = yr = julian_year
+Euro = [currency] = EURO = Eur
+tCO2eq = [massCO2eq] = tonCO2eq = tCO2 = tonne_carbon
+ton = metric_ton
+Euro = [currency] = EURO = Eur = €
