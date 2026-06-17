@@ -25,9 +25,12 @@
 
   ],
   "reference_year": 2022,
-  "optimized_years": 3,
-  "interval_between_years": 5,
+  "optimized_years": 8,
+  "interval_between_years": 4,
   "use_rolling_horizon": true,
-  "aggregated_time_steps_per_year": 5,
-  "conduct_time_series_aggregation": true
+  "aggregated_time_steps_per_year": 96,
+  "conduct_time_series_aggregation": true,
+  "conduct_scenario_analysis": false,
+  "run_default_scenario": false
+
 }

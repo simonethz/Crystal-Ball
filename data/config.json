@@ -9,7 +9,7 @@
       "NodeMethod": 2,
       "BarHomogeneous": 1,
       "DualReductions": 0,
-      "Threads": 128,
+      "Threads": 32,
       "Crossover": 0,
       "ScaleFlag": 2,
       "BarOrder": 0
@@ -19,6 +19,15 @@
     "run_diagnostics": true,
     "scaling_include_rhs": true
   },
-  "plugins": {"investment_decisions": {}}
-
+    "plugins": {
+        "investment_decisions": {
+            "profitability_bias_enabled": false,
+            "subsidies": []
+        }
+    }
 }
+
+
+
+
+

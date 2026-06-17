@@ -1,0 +1,38 @@
+{
+    "analysis": {
+        "dataset": "Crystal_Ball"
+    },
+    "solver": {
+        "name": "gurobi",
+        "solver_options": {
+            "Method": 2,
+            "NodeMethod": 2,
+            "BarHomogeneous": 1,
+            "DualReductions": 0,
+            "Threads": 32,
+            "Crossover": 0,
+            "ScaleFlag": 2,
+            "BarOrder": 0
+        },
+        "save_duals": true,
+        "use_scaling": false,
+        "run_diagnostics": true,
+        "scaling_include_rhs": true
+    },
+    "plugins": {
+        "investment_decisions": {
+            "profitability_bias_enabled": true,
+            "subsidies": [
+                {
+                    "technology": "heat_pump",
+                    "node": "DE",
+                    "type": "capex",
+                    "amount": 350
+                }
+            ],
+            "bias_weight": 0.8,
+            "bias_output_carriers": [],
+            "subsidy_label": "hp_capex_DE"
+        }
+    }
+}
