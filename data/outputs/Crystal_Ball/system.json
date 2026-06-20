@@ -1,0 +1,83 @@
+{
+  "set_carriers": [
+    "heat",
+    "electricity",
+    "natural_gas"
+  ],
+  "set_capacity_types": [
+    "power",
+    "energy"
+  ],
+  "set_technologies": [
+    "heat_pump",
+    "natural_gas_boiler",
+    "natural_gas_turbine",
+    "photovoltaics",
+    "wind_offshore",
+    "wind_onshore",
+    "reservoir_hydro",
+    "run-of-river_hydro",
+    "natural_gas_pipeline",
+    "power_line",
+    "battery"
+  ],
+  "set_conversion_technologies": [
+    "heat_pump",
+    "natural_gas_boiler",
+    "natural_gas_turbine",
+    "photovoltaics",
+    "wind_offshore",
+    "wind_onshore",
+    "reservoir_hydro",
+    "run-of-river_hydro"
+  ],
+  "set_storage_technologies": [
+    "battery"
+  ],
+  "set_retrofitting_technologies": [],
+  "storage_periodicity": true,
+  "multiyear_periodicity": false,
+  "set_transport_technologies": [
+    "natural_gas_pipeline",
+    "power_line"
+  ],
+  "set_transport_technologies_loss_exponential": [],
+  "double_capex_transport": false,
+  "set_nodes": [
+    "CH",
+    "DE",
+    "IT"
+  ],
+  "coords": {
+    "CH": {
+      "lon": 8.286928794895285,
+      "lat": 46.73678128684938
+    },
+    "DE": {
+      "lon": 10.426171427430804,
+      "lat": 51.08304539800482
+    },
+    "IT": {
+      "lon": 12.763657166123137,
+      "lat": 42.98201127614267
+    }
+  },
+  "exclude_parameters_from_TSA": true,
+  "conduct_scenario_analysis": false,
+  "run_default_scenario": false,
+  "clean_sub_scenarios": false,
+  "total_hours_per_year": 8760,
+  "knowledge_depreciation_rate": 0.1,
+  "reference_year": 2022,
+  "unaggregated_time_steps_per_year": 8760,
+  "aggregated_time_steps_per_year": 5,
+  "conduct_time_series_aggregation": true,
+  "optimized_years": 3,
+  "interval_between_years": 5,
+  "use_rolling_horizon": true,
+  "years_in_rolling_horizon": 1,
+  "years_in_decision_horizon": 1,
+  "use_capacities_existing": true,
+  "allow_investment": true,
+  "storage_charge_discharge_binary": false
+}

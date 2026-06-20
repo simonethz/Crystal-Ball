@@ -1,7 +1,7 @@
 /.idea
 /.vscode
 /archive
-/data/outputs
+/data/outputs/archive
 /data/config_*.json
 /.claude
-/visualization*
+

@@ -1,0 +1,11 @@
+{
+  "objective_value": 228237.98431084,
+  "solving_time": 7.930000066757202,
+  "number_iterations": 47,
+  "solver_status": 2,
+  "number_constraints": 30919,
+  "number_variables": 24503,
+  "scaling_time": 0,
+  "numerical_range_lhs": 8.446999723370247,
+  "numerical_range_rhs": 14.798934730687389
+}
