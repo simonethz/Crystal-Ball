@@ -1,7 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Read(//d/Students/ssambale_jwiegner/ZEN-garden/zen_garden/**)"
-    ]
-  }
-}
