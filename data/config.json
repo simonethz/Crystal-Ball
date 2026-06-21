@@ -1,6 +1,6 @@
 {
   "analysis": {
-    "dataset": "snapshot"
+    "dataset": "Crystal_Ball"
   },
   "solver": {
     "name": "gurobi",
@@ -9,14 +9,15 @@
       "NodeMethod": 2,
       "BarHomogeneous": 1,
       "DualReductions": 0,
-      "Threads": 128,
+      "Threads": 32,
       "Crossover": 0,
       "ScaleFlag": 2,
       "BarOrder": 0
     },
-    "add_duals": false,
-    "use_scaling": false,
+    "save_duals": true,
+    "use_scaling": true,
     "run_diagnostics": true,
     "scaling_include_rhs": true
-  }
+  },
+  "plugins": {"investment_decisions": {"profitability_bias_enabled": false}}
 }

@@ -122,9 +122,9 @@
     "UK"
   ],
   "reference_year": 2022,
-  "optimized_years": 15,
-  "interval_between_years": 2,
-  "use_rolling_horizon": false,
+  "optimized_years": 4,
+  "interval_between_years": 5,
+  "use_rolling_horizon": true,
   "aggregated_time_steps_per_year": 10,
   "conduct_time_series_aggregation": true
 }
