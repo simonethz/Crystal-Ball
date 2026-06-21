@@ -2,5 +2,5 @@
 /.vscode
 /data/config_*.json
 /.claude
-/outputs
+/data/outputs
 /visualization
